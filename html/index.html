@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/25602d05d1.js" crossorigin="anonymous"></script>
+    <!-- jQuery for top-page scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- GoogleFont -->
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap&subset=cyrillic,japanese" rel="stylesheet">
     <!-- OriginCSS -->
@@ -34,6 +37,8 @@
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
     <![endif]-->
+
+
 </head>
 
 <body class="top">
@@ -51,11 +56,11 @@
                         <!--             <li class="nav-item active">
               <a class="nav-link" href="#">Top</a>
             </li> -->
-                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">for Beginner & Kids</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Hours & Price</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Access</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#news"><i class="far fa-check-circle"></i>News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#starter"><i class="fab fa-itunes-note"></i>for Beginner & Kids</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#hours-price"><i class="far fa-clock"></i>Hours & Price</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#access"><i class="fas fa-map-marker-alt"></i>Access</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="far fa-smile"></i>Contact</a></li>
                         <!-- <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
                                 Dropdown
@@ -89,8 +94,8 @@
         </section>
         <!-- News -->
         <div class="container">
-            <section class="news">
-                <h2 class="title news_title">News</h2>
+            <section class="news" id="news" >
+                <h2 class="title news_title">News<br><span class="title_small">お知らせ</span></h2>
                 <article class="post">
                     <p class="date">1/20</p>
                     <h2>ホールド替え</h2>
@@ -134,8 +139,8 @@
         </div>
         <!-- For Beginner & Kids     -->
         <div class="container">
-            <section class="starter">
-                <h2 class="title starter_title">For Beginner & Kids</h2>
+            <section class="starter" id="starter">
+                <h2 class="title starter_title">For Beginner & Kids<br><span class="title_small">初めての方＆お子様のご利用について</span></h2>
                 <h3 class="starter_subtitle">スタッフがレクチャーしますので、初めてでも安心！</h3>
                 <div class="starter_wrap_img">
                     <img src="images/starter-teach.jpg" alt="starter-teach" width="300" height="200">
@@ -158,23 +163,25 @@
         </div>
         <!-- Hours & Price -->
         <div class="container">
-            <section class="hours-price" name="hours-price">
-                <h2 class="title hours-price_title">Hours & Price</h2>
+            <section class="hours-price" id="hours-price" name="hours-price">
+                <h2 class="title hours-price_title">Hours & Price<br><span class="title_small">営業時間＆料金</span></h2>
                 <div class="hours-price_hours">
                     <h3 class="hours-price_hours_title">Hours</h3>
                     <div class="hours-price_hours_line">
+
                     <p>
-                        平日 12:00-23:00<br>
-                        土日祝日10:00-21:00
+                        平日　　12:00-23:00<br>
+                        土日祝　10:00-21:00
                     </p>
+                    <br>
                     <p>
-                        定休日 毎週月曜日
+                        定休日 　毎週月曜日
                     </p>
+                    </div>
+                    <br>
                     <p>
                         イベントやホールド替え等で営業時間が変更される場合がございます。<br><a href="" class="hours-price_hours_line_1">こちら</a>もあわせてご確認ください。
                     </p>
-                    </div>
-
                 </div>
                 <div class="hours-price_price">
                     <h3 class="hours-price_price_title">Price</h3>
@@ -182,7 +189,7 @@
                     <table class="price_list1" border="1">
                         <tr>
                             <th class="list-width">施設登録料<span>(初回のみ)</span></th>
-                            <td>1200円</td>
+                            <td>¥1,200円</td>
                         </tr>
                     </table>
                     <table class="price_list2" border="1">
@@ -197,8 +204,8 @@
                     <table class="price_list3" border="1">
                         <tr>
                             <th  class="list-width" colspan="2">ご利用料金</th>
-                            <th class="list-width2">一般</th>
-                            <th>学生&高校生以下</th>
+                            <th class="list-width2 list-align">一般</th>
+                            <th class="list-align">学生&高校生以下</th>
                         </tr>
                         <tr>
                             <th class="list-width2" rowspan="4">平日</th>
@@ -233,15 +240,15 @@
                             <td>¥1,200</td>
                         </tr>
                         <tr>
-                            <th rowspan="2" colspan="2">レディースディ(毎週金曜)<br>メンズディ(毎週火曜)</th>
+                            <th rowspan="2" colspan="2">レディースディ(毎週金曜)<br>メンズディ　　(毎週火曜)</th>
                             <td rowspan="2" colspan="3">¥1,500 (祝日の場合は通常祝日料金)</td>
                         </tr>
                     </table>
                     <table class="price_list4" border="1">
                         <tr>
                             <th class="list-width">長期会員制度</th>
-                            <th class="list-width2">一般</th>
-                            <th>学生&高校生以下</th>
+                            <th class="list-width2 list-align">一般</th>
+                            <th class="list-align">学生&高校生以下</th>
                         </tr>
                         <tr>
                             <th>月パス</th>
@@ -252,12 +259,12 @@
                             <th>半年パス</th>
                         </tr>
                         <tr>
-                            <th>初回</th>
+                            <th>　初回</th>
                             <td>¥76,000</td>
                             <td>¥54,000</td>
                         </tr>
                         <tr>
-                            <th>継続</th>
+                            <th>　継続</th>
                             <td>¥69,000</td>
                             <td>¥49,000</td>
                         </tr>
@@ -265,12 +272,12 @@
                             <th>年間パス</th>
                         </tr>
                         <tr>
-                            <th>初回</th>
+                            <th>　初回</th>
                             <td>¥126,000</td>
                             <td>¥90,000</td>
                         </tr>
                         <tr>
-                            <th>継続</th>
+                            <th>　継続</th>
                             <td>¥114,000</td>
                             <td>¥81,000</td>
                         </tr>
@@ -280,11 +287,11 @@
                             <th colspan="2">レンタル</th>
                         </tr>
                         <tr>
-                            <th  class="list-width">シューズ</th>
+                            <th  class="list-width">　シューズ</th>
                             <td>¥300</td>
                         </tr>
                         <tr>
-                            <th>チョーク</th>
+                            <th>　チョーク</th>
                             <td>¥100</td>
                         </tr>
                     </table>
@@ -293,21 +300,28 @@
         </div>
         <!-- Access -->
         <div class="container">
-            <section class="access">
-                <h2 class="title access_title">Access</h2>
+            <section class="access" id="access">
+                <h2 class="title access_title">Access<br><span class="title_small">アクセス</span></h2>
+                <p>＜住所・電話番号＞</p>
                 <p>〒105-0014 東京都港区芝1-11-11</p>
                 <p>tel 0120-123-456</p>
-                <p>電車でのアクセス</p>
+                <p>＜電車でのアクセス＞</p>
                 <p>JR線・東京モノレール｢浜松町駅」金杉橋口より徒歩8分<br>
                     都営三田線「芝公園駅」出口A1より徒歩8分<br>
                     都営大江戸線・都営浅草線｢大門駅」出口A1より徒歩8分</p>
-                <p>駐車場</p>
+                <p>＜駐車場＞</p>
                 <p>駐車場はございませんので、お車でお越しの際は恐れ入りますが、周辺コインパーキングのご利用をお願い致します。</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.009628894028!2d139.7518351!3d35.6521344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM5JzAxLjYiTiAxMznCsDQ1JzE0LjYiRQ!5e0!3m2!1sja!2sjp!4v1583726122551!5m2!1sja!2sjp" width="900" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.009628894028!2d139.7518351!3d35.6521344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDM5JzAxLjYiTiAxMznCsDQ1JzE0LjYiRQ!5e0!3m2!1sja!2sjp!4v1583726122551!5m2!1sja!2sjp" width="960" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </section>
-        </div>
+<!--         </div>
+                <div class="container">
+            <section class="contact" id="contact" name="contact">
+                <h2 class="title contact_title">Contact</h2>
+            </section>
+        </div> -->
     </main>
-    <p id="pageTop"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
+    <!-- <p id="pageTop"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p> -->
+    <p id="pageTop"><a href="#"><img src="/images/pageTop.png" width="50" height="100" alt="ページ上部へ"></a></p>
     <div class="container">
         <footer class="glFooter">
             <div class="container glFooter__body">
