@@ -23,7 +23,7 @@ body {
 .glHeader {
     background-color: #eee;
     height: 75px;
-    padding: 5px;
+    padding: 5px 5px 0 5px;
 
     .navbar {
         background-color: #eee;
@@ -104,6 +104,12 @@ body {
         font-weight: normal;
         text-align: center;
     }
+    &_under {
+    	text-align: center;
+    	color: #aaa;
+    	 font-size: 2rem;
+    	font-weight: normal;
+    }
 }
 
 /*
@@ -159,12 +165,20 @@ body {
         margin-bottom: 2rem;
     }
 
-    &_wrap_img {
-        width: 300px;
-        height: 300px;
-        margin: 5px 20px 5px 0px;
+    // &_wrap_img {
+    // 	 width: 300px;
+    //     height: 400px;
+    //     margin: 5px 20px 5px 0px;
+    //     float: left;
+    // }
+.starter-teach_img {
+	        width: 300px;
+        height: 370px;
+        object-fit: cover;
+         margin: 5px 20px 5px 0px;
         float: left;
-    }
+}
+
 
     &_children {
         clear: both;
