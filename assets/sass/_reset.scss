@@ -8,7 +8,7 @@ $themeFont: 'Rajdhani';
 @media screen and (max-width: 768px) {
   :root {
     /* スマホの基準となるフォントサイズを解像度に応じて変更 */
-    font-size: calc(1vw + 1vh + .3vmin);
+    font-size: calc(1vw + 1vh + .1vmin);
   }
 }
 /*
@@ -52,9 +52,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $themeFont;
   @media screen and (max-width: 768px) {
     /* スマホ時は改行を除去 */
-    br {
-      display: none;
-    }
+    // br {
+    //   display: none;
+    // }
   }
 }
 p {
