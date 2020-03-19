@@ -15,15 +15,16 @@ body {
     margin: 0 auto;
     // background: #ddd
     // display: flex;
+    @media screen and(max-width:768px) {
+        width: 100%;
+            // margin: 0 auto;
+    }
 }
 
 /*
 * ヘッダー
 */
 .glHeader {
-    // background-color: #eee;
-    // height: 75px;
-    // padding: 5px 5px 0 5px;
     background: rgba(255,255,255,0.5);
     display: flex;
     padding: 40px 20px;
@@ -31,10 +32,18 @@ body {
     justify-content: space-between;
     transition: .5s;
     width: 100%;
+        @media screen and(max-width:768px) {
+        width: 100%;
+    }
 }
 .glHeader.transform{
     background: rgba(255,255,255,0.9);
     padding: 3px;
+     @media screen and(max-width:768px) {
+        width: 100%;
+         background: rgba(255,255,255,0.9);
+    padding: 3px;
+    }
 }
 .navbar-brand__title img{
     height: 20px;
@@ -117,12 +126,15 @@ body {
 .hero {
 	    max-height: 600px;
     overflow: hidden;
-    // width: 100%;
+    width: 100%;
     // height: 500px;
     // margin-bottom: 60px;
     // padding-top: 130px;
-    // background: url("../images/outdoor-boul-krimp_m.jpg") center center no-repeat;
-    // background-size: cover;
+    background-size: cover;
+       @media screen and(max-width:768px) {
+        width: 100%;
+            // margin: 0 auto;
+    }
 }
 .hero img{
     height: auto;
@@ -134,9 +146,9 @@ body {
 */
 .lede {
     width: 100%;
-    height: 350px;
+    height: auto;
     margin-bottom: 60px;
-    padding-top: 90px;
+    padding: 90px 0 ;
     background: linear-gradient(-150deg, #D6D6D6, #07BDC2);
     background-size: cover;
 
@@ -154,9 +166,9 @@ body {
         // display: block;
     }
 
-    @media screen and (max-width: 768px) {
-        height: 300px;
-    }
+    // @media screen and (max-width: 768px) {
+    //     height: 300px;
+    // }
 }
 
 /*
